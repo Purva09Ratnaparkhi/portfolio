@@ -1,6 +1,6 @@
 .contact-card {
   background: var(--bg-card);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(190, 147, 249, 0.08);
   border-radius: var(--radius);
   padding: 48px;
   display: grid;
@@ -8,13 +8,15 @@
   gap: 48px;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .contact-card::before {
   content: '';
   position: absolute;
   top: -100px; right: -100px;
   width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(123,97,255,0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(190, 147, 249, 0.12), transparent 70%);
   pointer-events: none;
 }
 .contact-heading {
@@ -37,8 +39,8 @@
 .contact-icon-tile {
   width: 44px; height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(123,97,255,0.1);
-  border: 1px solid rgba(123,97,255,0.15);
+  background: rgba(190, 147, 249, 0.1);
+  border: 1px solid rgba(190, 147, 249, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +66,7 @@
 }
 .availability-card, .quick-links-card {
   background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(190, 147, 249, 0.08);
   border-radius: var(--radius-sm);
   padding: 24px;
 }
@@ -81,7 +83,7 @@
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--green);
-  box-shadow: 0 0 8px rgba(52,211,153,0.5);
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
 }
 .availability-desc {
   color: var(--text-dim);
@@ -115,7 +117,7 @@
 }
 .quick-link-btn:hover {
   border-color: var(--violet);
-  box-shadow: 0 4px 16px rgba(123,97,255,0.15);
+  box-shadow: 0 4px 16px rgba(190, 147, 249, 0.25);
   transform: translateY(-2px);
 }
 

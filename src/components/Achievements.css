@@ -3,18 +3,22 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 28px;
 }
+
 .achievement-card {
   background: var(--bg-card);
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(190, 147, 249, 0.08);
   border-radius: var(--radius);
   padding: 32px;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .achievement-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255,97,182,0.35);
-  box-shadow: 0 12px 48px rgba(255,97,182,0.12);
+  border-color: rgba(255, 42, 133, 0.35);
+  box-shadow: 0 12px 48px rgba(255, 42, 133, 0.15);
 }
+
 .achievement-emoji {
   font-size: 2.8rem;
   margin-bottom: 16px;

@@ -12,7 +12,7 @@
 
 .publication-card {
   background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(190, 147, 249, 0.08);
   border-radius: var(--radius);
   padding: 32px;
   display: flex;
@@ -20,20 +20,22 @@
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .publication-card::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), transparent 60%);
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.05), transparent 60%);
   opacity: 0;
   transition: opacity var(--transition);
 }
 
 .publication-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0, 212, 255, 0.35);
-  box-shadow: 0 12px 48px rgba(0, 212, 255, 0.12);
+  border-color: rgba(255, 42, 133, 0.35);
+  box-shadow: 0 12px 48px rgba(255, 42, 133, 0.15);
   background: var(--bg-card-hover);
 }
 
@@ -53,7 +55,7 @@
 .publication-icon {
   width: 40px; height: 40px;
   border-radius: 10px;
-  background: rgba(0, 212, 255, 0.1);
+  background: rgba(190, 147, 249, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +97,8 @@
   gap: 8px;
   padding: 10px 20px;
   border-radius: var(--radius-sm);
-  background: rgba(0, 212, 255, 0.08);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: rgba(255, 42, 133, 0.08);
+  border: 1px solid rgba(255, 42, 133, 0.2);
   color: var(--text);
   font-family: var(--font-body);
   font-size: 0.88rem;
@@ -114,7 +116,7 @@
   background: var(--aurora-gradient-h);
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.35);
   transform: translateY(-2px);
 }
 

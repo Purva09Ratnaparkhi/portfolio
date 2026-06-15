@@ -8,11 +8,11 @@
   transition: background 0.4s, box-shadow 0.4s;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: rgba(5,10,18,0.4);
+  background: rgba(2,6,23,0.4);
 }
 .nav.scrolled {
-  background: rgba(5,10,18,0.88);
-  box-shadow: 0 1px 40px rgba(123,97,255,0.08);
+  background: rgba(2,6,23,0.88);
+  box-shadow: 0 1px 40px rgba(190, 147, 249, 0.08);
 }
 .nav-container {
   display: flex;
@@ -75,7 +75,7 @@
     position: fixed;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: rgba(5,10,18,0.96);
+    background: rgba(2,6,23,0.96);
     flex-direction: column;
     align-items: center;
     gap: 0;
@@ -83,7 +83,7 @@
     transform: translateY(-120%);
     transition: transform 0.4s ease;
     backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(123,97,255,0.15);
+    border-bottom: 1px solid rgba(190, 147, 249, 0.15);
   }
   .nav-links.open { transform: translateY(0); }
   .nav-links li { width: 100%; text-align: center; }
@@ -113,7 +113,7 @@
   background: var(--aurora-gradient);
   color: #fff !important;
   font-weight: 600 !important;
-  box-shadow: 0 4px 15px rgba(123,97,255,0.25);
+  box-shadow: 0 4px 15px rgba(255, 42, 133, 0.25);
   transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
 }
 
@@ -123,7 +123,7 @@
 
 .nav-resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(123,97,255,0.45);
+  box-shadow: 0 6px 22px rgba(255, 42, 133, 0.45);
   filter: brightness(1.1);
   color: #fff !important;
 }

@@ -73,9 +73,9 @@ section {
 .btn-primary {
   background: var(--aurora-gradient);
   color: #fff;
-  box-shadow: 0 4px 24px rgba(123,97,255,0.3);
+  box-shadow: 0 4px 24px rgba(255, 42, 133, 0.35);
 }
-.btn-primary:hover { box-shadow: 0 8px 40px rgba(123,97,255,0.45); }
+.btn-primary:hover { box-shadow: 0 8px 40px rgba(255, 42, 133, 0.5); }
 .btn-ghost {
   background: transparent;
   color: var(--text);
@@ -83,7 +83,7 @@ section {
 }
 .btn-ghost:hover {
   border-color: var(--violet);
-  box-shadow: 0 4px 20px rgba(123,97,255,0.15);
+  box-shadow: 0 4px 20px rgba(190, 147, 249, 0.25);
 }
 
 /* prefers-reduced-motion override for reveals */
