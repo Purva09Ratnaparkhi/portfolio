@@ -30,6 +30,17 @@ section {
   color: var(--violet);
   margin-bottom: 8px;
 }
+/* Alternate section label colors based on background contrast */
+#skills .section-label,
+#achievements .section-label,
+#contact .section-label {
+  color: var(--pink);
+}
+#projects .section-label,
+#journey .section-label,
+#publications .section-label {
+  color: var(--violet);
+}
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -66,24 +77,34 @@ section {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
   border: none;
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary {
   background: var(--aurora-gradient);
   color: #fff;
-  box-shadow: 0 4px 24px rgba(255, 42, 133, 0.35);
+  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.25);
 }
-.btn-primary:hover { box-shadow: 0 8px 40px rgba(255, 42, 133, 0.5); }
+.btn-primary:hover { box-shadow: 0 8px 30px rgba(255, 42, 133, 0.4); }
 .btn-ghost {
   background: transparent;
   color: var(--text);
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(44, 41, 54, 0.15);
 }
 .btn-ghost:hover {
-  border-color: var(--violet);
-  box-shadow: 0 4px 20px rgba(190, 147, 249, 0.25);
+  border-color: var(--pink);
+  background: var(--pink-light);
+  color: var(--pink);
+  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.12);
+}
+
+/* Handwritten Cursive Text */
+.handwritten {
+  font-family: var(--font-cursive);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--pink);
+  line-height: 1;
 }
 
 /* prefers-reduced-motion override for reveals */

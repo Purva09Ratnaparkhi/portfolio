@@ -1,7 +1,28 @@
+#publications {
+  background: var(--bg-cream);
+  position: relative;
+  z-index: 5;
+}
+
+/* Organic Wave Divider transitioning to Contact section (lavender background) */
+#publications::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  height: 80px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%23bdaadc' d='M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  pointer-events: none;
+}
+
 .publications-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 992px) {
@@ -12,7 +33,7 @@
 
 .publication-card {
   background: var(--bg-card);
-  border: 1px solid rgba(190, 147, 249, 0.08);
+  border: 1px solid rgba(140, 93, 253, 0.06);
   border-radius: var(--radius);
   padding: 32px;
   display: flex;
@@ -20,22 +41,22 @@
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(44, 41, 54, 0.06), 0 2px 10px rgba(140, 93, 253, 0.04);
 }
 
 .publication-card::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.05), transparent 60%);
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.03), transparent 60%);
   opacity: 0;
   transition: opacity var(--transition);
+  pointer-events: none;
 }
 
 .publication-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 42, 133, 0.35);
-  box-shadow: 0 12px 48px rgba(255, 42, 133, 0.15);
+  border-color: rgba(255, 42, 133, 0.25);
+  box-shadow: 0 16px 40px rgba(255, 42, 133, 0.14);
   background: var(--bg-card-hover);
 }
 
@@ -55,20 +76,21 @@
 .publication-icon {
   width: 40px; height: 40px;
   border-radius: 10px;
-  background: rgba(190, 147, 249, 0.1);
+  background: rgba(140, 93, 253, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--cyan);
+  color: var(--violet);
 }
 
 .publication-journal {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--violet);
+  font-weight: 600;
 }
 
 .publication-title {
@@ -79,11 +101,12 @@
   line-height: 1.5;
   position: relative;
   z-index: 2;
+  color: var(--text);
 }
 
 .publication-desc {
   color: var(--text-dim);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin-bottom: 24px;
   line-height: 1.7;
   position: relative;
@@ -97,14 +120,14 @@
   gap: 8px;
   padding: 10px 20px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 42, 133, 0.08);
-  border: 1px solid rgba(255, 42, 133, 0.2);
+  background: rgba(255, 42, 133, 0.04);
+  border: 1px solid rgba(255, 42, 133, 0.12);
   color: var(--text);
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition), color var(--transition);
   cursor: pointer;
   width: fit-content;
   margin-top: auto; /* Push it to the bottom of the card */
@@ -113,10 +136,10 @@
 }
 
 .publication-link-btn:hover {
-  background: var(--aurora-gradient-h);
+  background: var(--aurora-gradient);
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.35);
+  box-shadow: 0 6px 18px rgba(255, 42, 133, 0.22);
   transform: translateY(-2px);
 }
 
