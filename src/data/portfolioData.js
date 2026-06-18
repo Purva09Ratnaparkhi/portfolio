@@ -1,5 +1,15 @@
 export const projects = [
   {
+    icon: '🤖',
+    type: 'Agentic Code Review System',
+    title: 'CritiqueAI',
+    description:
+      'AI-powered multi-language GitHub PR reviewer using LangGraph agents for security analysis, performance auditing, style validation, and test coverage assessment. Integrates Semgrep, tree-sitter, and GitHub APIs to generate structured reviews and automated inline comments.',
+    tags: ['LangGraph', 'Semgrep', 'GitHub API', 'Tree-sitter', 'Pydantic', 'Python'],
+    link: 'https://huggingface.co/spaces/advait09/CritiqueAI',
+    github: 'https://github.com/Purva09Ratnaparkhi/CritiqueAI',
+  },
+  {
     icon: '🔗',
     type: 'Agentic RAG System',
     title: 'RAGForge',
@@ -28,6 +38,15 @@ export const projects = [
     tags: ['Python', 'Machine Learning', 'Cyber Security', 'Behavioral Biometrics', 'Scikit-learn', 'Authentication'],
     link: 'https://huggingface.co/spaces/advait09/keystroke-based-verifier',
     github: 'https://github.com/AdvaitMhalungekar/Keystroke-Rhythm-Based-User-Verifier',
+  },
+  {
+    icon: '💧',
+    type: 'Digital Twin · Industrial AI',
+    title: 'AquaTwin',
+    description:
+      'AI-powered digital twin for industrial water treatment systems. Simulates water treatment processes, predicts optimal chemical dosing, models fouling and resin degradation, detects anomalies, and provides real-time operational insights through a Flask dashboard and ML-driven optimization engine.',
+    tags: ['Digital Twin', 'Machine Learning', 'XGBoost', 'Flask', 'MLflow', 'Time Series'],
+    github: 'https://github.com/Purva09Ratnaparkhi/Water-Hardness-Treatment-Plant-Digital-Twin',
   },
   {
     icon: '⚔️',
