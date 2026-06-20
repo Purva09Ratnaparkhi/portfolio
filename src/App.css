@@ -7,6 +7,12 @@
   padding: 0 24px;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 /* Aurora gradient text */
 .aurora-text {
   background: var(--aurora-gradient-h);
@@ -54,6 +60,12 @@ section {
   font-size: 1.05rem;
 }
 
+@media (max-width: 768px) {
+  .section-subtitle {
+    margin-bottom: 40px;
+  }
+}
+
 /* Scroll reveal */
 .reveal {
   opacity: 0;
@@ -79,6 +91,13 @@ section {
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
   border: none;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary {

@@ -45,10 +45,29 @@
   --transition: 0.35s cubic-bezier(.4, 0, .2, 1);
 }
 
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 72px;
+    --nav-h: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-pad: 56px;
+  }
+}
+
 html {
   font-size: 17px;
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
 }
 
 body {

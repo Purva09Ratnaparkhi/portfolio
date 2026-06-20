@@ -31,6 +31,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .publication-card {
+    padding: 24px 20px;
+  }
+}
+
 .publication-card {
   background: var(--bg-card);
   border: 1px solid rgba(140, 93, 253, 0.06);

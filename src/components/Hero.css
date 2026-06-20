@@ -216,3 +216,20 @@
     top: -60px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-inner {
+    gap: 28px;
+  }
+  .hero-photo { width: 180px; height: 180px; }
+  .hero-name {
+    font-size: clamp(2.8rem, 14vw, 3.8rem);
+  }
+  .hero-title {
+    font-size: 0.95rem;
+  }
+  .hero-content::before {
+    font-size: clamp(3rem, 18vw, 6rem);
+    top: -40px;
+  }
+}

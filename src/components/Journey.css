@@ -216,3 +216,12 @@
     transform: translateY(-4px);
   }
 }
+
+@media (max-width: 480px) {
+  .timeline-card {
+    padding: 18px 16px;
+  }
+  .timeline-role {
+    font-size: 1.05rem;
+  }
+}

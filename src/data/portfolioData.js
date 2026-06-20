@@ -14,7 +14,7 @@ export const projects = [
     type: 'Agentic RAG System',
     title: 'RAGForge',
     description:
-      'RAG pipeline with hybrid retrieval (BM25 + FAISS + RRF), HyDE-based query rewriting, cross-encoder reranking, LangGraph agent for adaptive routing. Evaluated with RAGAS.',
+      'RAG pipeline with hybrid retrieval (BM25 + FAISS + RRF), HyDE-based query rewriting, cross-encoder reranking, and LangGraph agents for adaptive routing. Implements document chunking, metadata filtering, context compression, and retrieval evaluation using RAGAS to improve answer relevance and factual grounding.',
     tags: ['LangChain', 'LangGraph', 'FAISS', 'HyDE', 'RAGAS', 'Python'],
     link: 'https://huggingface.co/spaces/Purva09/RAGForge',
     github: 'https://github.com/Purva09Ratnaparkhi/RAGForge',
@@ -24,7 +24,7 @@ export const projects = [
     type: 'AI Learning Platform · Published',
     title: 'SkillTrax',
     description:
-      'AI-powered interview prep with automated question generation, skill gap analysis, mock interview feedback (facial + voice analysis), personalized roadmaps, YouTube integration, Flask interface.',
+      'AI-powered interview preparation platform featuring automated question generation, skill gap analysis, mock interview feedback through facial and voice analysis, personalized learning roadmaps, YouTube-based learning recommendations, and an interactive Flask-powered dashboard designed to accelerate technical interview readiness.',
     tags: ['Flask', 'LLMs', 'Scikit-learn', 'Computer Vision', 'Springer'],
     link: 'https://huggingface.co/spaces/advait09/SkillTrax',
     github: 'https://github.com/Purva09Ratnaparkhi/Skilltrax',

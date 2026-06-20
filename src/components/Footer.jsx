@@ -8,7 +8,6 @@ export default function Footer() {
         <div className="footer-inner">
           <div>
             <p className="footer-logo aurora-text">Purva R.</p>
-            <p className="footer-tagline">AI Engineer &amp; Data Science</p>
           </div>
           <ul className="footer-links">
             {navLinks.map(link => (

@@ -242,4 +242,14 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  .skills-tab {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+  .skill-detail {
+    padding: 22px 18px;
+  }
+  .skills-tabs {
+    gap: 6px;
+  }
 }

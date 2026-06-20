@@ -59,3 +59,14 @@
   }
   .footer-copy { text-align: center; }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 36px 0 24px;
+  }
+  .footer-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -70,3 +70,9 @@
   font-size: 0.95rem;
   line-height: 1.7;
 }
+
+@media (max-width: 480px) {
+  .achievement-card {
+    padding: 24px 20px;
+  }
+}
