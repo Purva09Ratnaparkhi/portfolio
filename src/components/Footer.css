@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid rgba(140, 93, 253, 0.08);
+  border-top: 1px solid rgba(201, 168, 76, 0.08);
   padding: 48px 0 32px;
   background: var(--bg-light);
   position: relative;
@@ -26,7 +26,7 @@
 }
 .footer-tagline {
   color: var(--text-dim);
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   margin-top: 4px;
 }
 .footer-links {
@@ -38,14 +38,14 @@
 .footer-links a {
   color: var(--text-dim);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   transition: color var(--transition);
   font-weight: 500;
 }
-.footer-links a:hover { color: var(--pink); }
+.footer-links a:hover { color: var(--violet); }
 .footer-copy {
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-dim);
   font-family: var(--font-mono);
   font-weight: 500;

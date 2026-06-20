@@ -109,20 +109,21 @@ section {
 .btn-ghost {
   background: transparent;
   color: var(--text);
-  border: 1px solid rgba(44, 41, 54, 0.15);
+  border: 1px solid rgba(240, 230, 211, 0.2);
 }
 .btn-ghost:hover {
-  border-color: var(--pink);
+  border-color: var(--violet);
   background: var(--pink-light);
-  color: var(--pink);
-  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.12);
+  color: var(--violet);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.18);
 }
 
-/* Handwritten Cursive Text */
+/* Accent display text */
 .handwritten {
-  font-family: var(--font-cursive);
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--pink);
+  color: var(--violet);
   line-height: 1;
 }
 
