@@ -4,13 +4,13 @@
   z-index: 5;
 }
 
-/* Wave Divider → Publications section (bg-cream) */
+/* Wave → Publications (#212d40) */
 #achievements::after {
   content: '';
   position: absolute;
   bottom: -1px; left: 0; right: 0;
   height: 80px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%230f2236' d='M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%23212d40' d='M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 10;
@@ -26,53 +26,24 @@
 }
 
 .achievement-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(201, 168, 76, 0.08);
+  background: var(--bg-card-hover);
+  border: 1px solid rgba(214, 104, 83, 0.1);
   border-radius: var(--radius);
   padding: 32px;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .achievement-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(201, 168, 76, 0.3);
-  box-shadow: 0 16px 40px rgba(201, 168, 76, 0.12);
-  background: var(--bg-card-hover);
+  border-color: rgba(214, 104, 83, 0.38);
+  box-shadow: 0 16px 40px rgba(214, 104, 83, 0.14);
+  background: #364156;
 }
 
-.achievement-emoji {
-  font-size: 2.8rem;
-  margin-bottom: 16px;
-  display: block;
-}
+.achievement-emoji { font-size: 2.8rem; margin-bottom: 16px; display: block; }
+.achievement-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+.achievement-org { font-family: var(--font-mono); font-size: 0.72rem; color: var(--violet); margin-bottom: 12px; display: block; font-weight: 600; letter-spacing: 1px; }
+.achievement-desc { color: var(--text-dim); font-size: 0.93rem; line-height: 1.7; }
 
-.achievement-title {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: var(--text);
-}
-
-.achievement-org {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--violet);
-  margin-bottom: 12px;
-  display: block;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.achievement-desc {
-  color: var(--text-dim);
-  font-size: 0.93rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 480px) {
-  .achievement-card {
-    padding: 24px 20px;
-  }
-}
+@media (max-width: 480px) { .achievement-card { padding: 24px 20px; } }

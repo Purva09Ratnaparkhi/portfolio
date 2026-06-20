@@ -8,27 +8,27 @@
 }
 
 :root {
-  /* ── Backgrounds ── */
-  --bg: #0d1b2a;               /* deep navy — page background */
-  --bg-cream: #0f2236;         /* section alternates (was cream) */
-  --bg-lavender: #0a1628;      /* section alternates (was lavender) */
-  --bg-light: #152b40;         /* navbar / footer */
-  --bg-card: #1a3349;          /* card surfaces */
-  --bg-card-hover: #1f3d57;    /* card hover */
+  /* ── Backgrounds (from the palette) ── */
+  --bg: #11151c;               /* darkest navy — page background */
+  --bg-cream: #212d40;         /* dark slate — section alternates */
+  --bg-lavender: #11151c;      /* darkest navy — section alternates */
+  --bg-light: #1a2232;         /* nav / footer (between the two darks) */
+  --bg-card: #212d40;          /* card surfaces */
+  --bg-card-hover: #2c3a50;    /* card hover */
 
   /* ── Text ── */
-  --text: #f0e6d3;             /* warm off-white */
-  --text-dim: #8faec5;         /* muted blue-grey */
+  --text: #eceae6;             /* warm off-white */
+  --text-dim: #8fa3be;         /* muted cool blue-grey */
 
-  /* ── Gold Accent Trio ── */
-  --violet: #c9a84c;           /* warm gold — primary accent */
-  --cyan: #e8c46a;             /* light gold — secondary accent */
-  --pink: #d4892a;             /* amber / deep gold — tertiary accent */
-  --pink-light: rgba(201, 168, 76, 0.09); /* gold tint bg */
+  /* ── Accent Trio ── */
+  --violet: #d66853;           /* terracotta — primary accent */
+  --cyan: #e8836e;             /* light terracotta — secondary */
+  --pink: #7d4e57;             /* muted rose — tertiary */
+  --pink-light: rgba(214, 104, 83, 0.09); /* terracotta tint bg */
 
   /* ── Gradients ── */
-  --aurora-gradient: linear-gradient(135deg, #d4892a, #c9a84c, #e8c46a);
-  --aurora-gradient-h: linear-gradient(90deg, #d4892a, #c9a84c, #e8c46a);
+  --aurora-gradient: linear-gradient(135deg, #7d4e57, #d66853, #e8836e);
+  --aurora-gradient-h: linear-gradient(90deg, #7d4e57, #d66853, #e8836e);
 
   /* ── Typography ── */
   --font-display: 'Space Grotesk', sans-serif;
@@ -65,9 +65,7 @@ html {
 }
 
 @media (max-width: 480px) {
-  html {
-    font-size: 15px;
-  }
+  html { font-size: 15px; }
 }
 
 body {
@@ -80,33 +78,24 @@ body {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-lavender);
-}
-
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb {
-  background: rgba(201, 168, 76, 0.4);
+  background: rgba(214, 104, 83, 0.45);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 137, 42, 0.7);
+  background: rgba(214, 104, 83, 0.75);
 }
 
 ::selection {
-  background: rgba(201, 168, 76, 0.3);
+  background: rgba(214, 104, 83, 0.35);
   color: #fff;
 }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

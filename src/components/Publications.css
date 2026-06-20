@@ -4,42 +4,26 @@
   z-index: 5;
 }
 
-/* Wave Divider → Contact section (bg-lavender) */
+/* Wave → Contact (#11151c) */
 #publications::after {
   content: '';
   position: absolute;
   bottom: -1px; left: 0; right: 0;
   height: 80px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%230a1628' d='M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%2311151c' d='M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 10;
   pointer-events: none;
 }
 
-.publications-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 992px) {
-  .publications-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .publication-card {
-    padding: 24px 20px;
-  }
-}
+.publications-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; position: relative; z-index: 2; }
+@media (max-width: 992px) { .publications-grid { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .publication-card { padding: 24px 20px; } }
 
 .publication-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(201, 168, 76, 0.08);
+  background: var(--bg-card-hover);
+  border: 1px solid rgba(214, 104, 83, 0.1);
   border-radius: var(--radius);
   padding: 32px;
   display: flex;
@@ -47,13 +31,13 @@
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .publication-card::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(201, 168, 76, 0.04), transparent 60%);
+  background: linear-gradient(135deg, rgba(214, 104, 83, 0.05), transparent 60%);
   opacity: 0;
   transition: opacity var(--transition);
   pointer-events: none;
@@ -61,99 +45,33 @@
 
 .publication-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(201, 168, 76, 0.3);
-  box-shadow: 0 16px 40px rgba(201, 168, 76, 0.12);
-  background: var(--bg-card-hover);
+  border-color: rgba(214, 104, 83, 0.38);
+  box-shadow: 0 16px 40px rgba(214, 104, 83, 0.12);
+  background: #364156;
 }
+.publication-card:hover::before { opacity: 1; }
 
-.publication-card:hover::before {
-  opacity: 1;
-}
-
-.publication-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.publication-icon {
-  width: 40px; height: 40px;
-  border-radius: 10px;
-  background: rgba(201, 168, 76, 0.07);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  color: var(--violet);
-  flex-shrink: 0;
-}
-
-.publication-journal {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--violet);
-  font-weight: 600;
-}
-
-.publication-title {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  line-height: 1.5;
-  position: relative;
-  z-index: 2;
-  color: var(--text);
-}
-
-.publication-desc {
-  color: var(--text-dim);
-  font-size: 0.93rem;
-  margin-bottom: 24px;
-  line-height: 1.7;
-  position: relative;
-  z-index: 2;
-}
+.publication-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; position: relative; z-index: 2; }
+.publication-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(214, 104, 83, 0.08); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--violet); flex-shrink: 0; }
+.publication-journal { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--violet); font-weight: 600; }
+.publication-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; line-height: 1.5; position: relative; z-index: 2; color: var(--text); }
+.publication-desc { color: var(--text-dim); font-size: 0.93rem; margin-bottom: 24px; line-height: 1.7; position: relative; z-index: 2; }
 
 .publication-link-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 10px 20px;
   border-radius: var(--radius-sm);
-  background: rgba(201, 168, 76, 0.06);
-  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: rgba(214, 104, 83, 0.07);
+  border: 1px solid rgba(214, 104, 83, 0.18);
   color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-family: var(--font-body); font-size: 0.88rem; font-weight: 600;
   text-decoration: none;
   transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition), color var(--transition);
-  cursor: pointer;
-  width: fit-content;
-  margin-top: auto;
-  position: relative;
-  z-index: 2;
+  cursor: pointer; width: fit-content; margin-top: auto; position: relative; z-index: 2;
 }
-
 .publication-link-btn:hover {
-  background: var(--aurora-gradient);
-  border-color: transparent;
-  color: var(--bg);
-  box-shadow: 0 6px 18px rgba(201, 168, 76, 0.25);
-  transform: translateY(-2px);
+  background: var(--aurora-gradient); border-color: transparent; color: #fff;
+  box-shadow: 0 6px 18px rgba(214, 104, 83, 0.35); transform: translateY(-2px);
 }
-
-.publication-link-btn svg {
-  transition: transform var(--transition);
-}
-
-.publication-link-btn:hover svg {
-  transform: translate(2px, -2px);
-}
+.publication-link-btn svg { transition: transform var(--transition); }
+.publication-link-btn:hover svg { transform: translate(2px, -2px); }
